@@ -1,0 +1,25 @@
+[package]
+name = "tokio-serde-msgpack"
+version = "0.2.0"
+authors = ["Stephen Weeks <tene@allalone.org>"]
+edition = "2018"
+repository = "https://github.com/tene/tokio-serde-msgpack"
+homepage = "https://github.com/tene/tokio-serde-msgpack"
+documentation = "https://docs.rs/tokio-serde-msgpack"
+license = "Apache-2.0/MIT"
+description = """ ( privy fork - atmos  ) 
+Utilities needed to easily implement a Tokio MsgPack transport using serde for MsgPack serialization and deserialization of frame values.
+"""
+
+[dependencies]
+serde = "1.0.116"
+futures = "0.3.5"
+bytes = "0.5.6"
+rmp-serde = "0.14.4"
+tokio-io = "0.1.13"
+tokio = { version = "0.2.22", features = ["full"] }
+tokio-util = { version = "0.3.1", features = ["codec"] }
+
+[dev_dependencies]
+serde_derive = "1.0.116"
+
